@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "z78/Dmw/1Fmn8YhX2GUHsg4gV8xOFj7NHwSO/oQak5M=",
+  "Source": "PointOfSaleMicroservices.Customer.WebApi",
+  "BasePath": "_content/PointOfSaleMicroservices.Customer.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

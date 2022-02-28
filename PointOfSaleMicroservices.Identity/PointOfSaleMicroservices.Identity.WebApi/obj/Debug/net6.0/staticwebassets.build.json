@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "l9KGBGwtiBFOjIoQHtNjs/QU4Raaq7C0MH313W0RRsU=",
+  "Source": "PointOfSaleMicroservices.Identity.WebApi",
+  "BasePath": "_content/PointOfSaleMicroservices.Identity.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

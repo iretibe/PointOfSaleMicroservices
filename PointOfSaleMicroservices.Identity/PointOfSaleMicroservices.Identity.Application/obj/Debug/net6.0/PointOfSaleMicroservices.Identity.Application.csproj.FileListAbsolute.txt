@@ -1,0 +1,12 @@
+C:\Users\Somad\source\repos\PointOfSaleMicroservices\PointOfSaleMicroservices.Identity\PointOfSaleMicroservices.Identity.Application\bin\Debug\net6.0\PointOfSaleMicroservices.Identity.Application.deps.json
+C:\Users\Somad\source\repos\PointOfSaleMicroservices\PointOfSaleMicroservices.Identity\PointOfSaleMicroservices.Identity.Application\bin\Debug\net6.0\PointOfSaleMicroservices.Identity.Application.dll
+C:\Users\Somad\source\repos\PointOfSaleMicroservices\PointOfSaleMicroservices.Identity\PointOfSaleMicroservices.Identity.Application\bin\Debug\net6.0\PointOfSaleMicroservices.Identity.Application.pdb
+C:\Users\Somad\source\repos\PointOfSaleMicroservices\PointOfSaleMicroservices.Identity\PointOfSaleMicroservices.Identity.Application\obj\Debug\net6.0\PointOfSaleMicroservices.Identity.Application.csproj.AssemblyReference.cache
+C:\Users\Somad\source\repos\PointOfSaleMicroservices\PointOfSaleMicroservices.Identity\PointOfSaleMicroservices.Identity.Application\obj\Debug\net6.0\PointOfSaleMicroservices.Identity.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Somad\source\repos\PointOfSaleMicroservices\PointOfSaleMicroservices.Identity\PointOfSaleMicroservices.Identity.Application\obj\Debug\net6.0\PointOfSaleMicroservices.Identity.Application.AssemblyInfoInputs.cache
+C:\Users\Somad\source\repos\PointOfSaleMicroservices\PointOfSaleMicroservices.Identity\PointOfSaleMicroservices.Identity.Application\obj\Debug\net6.0\PointOfSaleMicroservices.Identity.Application.AssemblyInfo.cs
+C:\Users\Somad\source\repos\PointOfSaleMicroservices\PointOfSaleMicroservices.Identity\PointOfSaleMicroservices.Identity.Application\obj\Debug\net6.0\PointOfSaleMicroservices.Identity.Application.csproj.CoreCompileInputs.cache
+C:\Users\Somad\source\repos\PointOfSaleMicroservices\PointOfSaleMicroservices.Identity\PointOfSaleMicroservices.Identity.Application\obj\Debug\net6.0\PointOfSaleMicroservices.Identity.Application.dll
+C:\Users\Somad\source\repos\PointOfSaleMicroservices\PointOfSaleMicroservices.Identity\PointOfSaleMicroservices.Identity.Application\obj\Debug\net6.0\refint\PointOfSaleMicroservices.Identity.Application.dll
+C:\Users\Somad\source\repos\PointOfSaleMicroservices\PointOfSaleMicroservices.Identity\PointOfSaleMicroservices.Identity.Application\obj\Debug\net6.0\PointOfSaleMicroservices.Identity.Application.pdb
+C:\Users\Somad\source\repos\PointOfSaleMicroservices\PointOfSaleMicroservices.Identity\PointOfSaleMicroservices.Identity.Application\obj\Debug\net6.0\ref\PointOfSaleMicroservices.Identity.Application.dll
