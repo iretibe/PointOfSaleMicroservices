@@ -1,0 +1,12 @@
+C:\PROJECT\PointOfSaleMicroservices\Shared\PointOfSaleMicroservices.Shared.Abstractions\bin\Debug\net6.0\PointOfSaleMicroservices.Shared.Abstractions.deps.json
+C:\PROJECT\PointOfSaleMicroservices\Shared\PointOfSaleMicroservices.Shared.Abstractions\bin\Debug\net6.0\PointOfSaleMicroservices.Shared.Abstractions.dll
+C:\PROJECT\PointOfSaleMicroservices\Shared\PointOfSaleMicroservices.Shared.Abstractions\bin\Debug\net6.0\PointOfSaleMicroservices.Shared.Abstractions.pdb
+C:\PROJECT\PointOfSaleMicroservices\Shared\PointOfSaleMicroservices.Shared.Abstractions\obj\Debug\net6.0\PointOfSaleMicroservices.Shared.Abstractions.csproj.AssemblyReference.cache
+C:\PROJECT\PointOfSaleMicroservices\Shared\PointOfSaleMicroservices.Shared.Abstractions\obj\Debug\net6.0\PointOfSaleMicroservices.Shared.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROJECT\PointOfSaleMicroservices\Shared\PointOfSaleMicroservices.Shared.Abstractions\obj\Debug\net6.0\PointOfSaleMicroservices.Shared.Abstractions.AssemblyInfoInputs.cache
+C:\PROJECT\PointOfSaleMicroservices\Shared\PointOfSaleMicroservices.Shared.Abstractions\obj\Debug\net6.0\PointOfSaleMicroservices.Shared.Abstractions.AssemblyInfo.cs
+C:\PROJECT\PointOfSaleMicroservices\Shared\PointOfSaleMicroservices.Shared.Abstractions\obj\Debug\net6.0\PointOfSaleMicroservices.Shared.Abstractions.csproj.CoreCompileInputs.cache
+C:\PROJECT\PointOfSaleMicroservices\Shared\PointOfSaleMicroservices.Shared.Abstractions\obj\Debug\net6.0\PointOfSaleMicroservices.Shared.Abstractions.dll
+C:\PROJECT\PointOfSaleMicroservices\Shared\PointOfSaleMicroservices.Shared.Abstractions\obj\Debug\net6.0\refint\PointOfSaleMicroservices.Shared.Abstractions.dll
+C:\PROJECT\PointOfSaleMicroservices\Shared\PointOfSaleMicroservices.Shared.Abstractions\obj\Debug\net6.0\PointOfSaleMicroservices.Shared.Abstractions.pdb
+C:\PROJECT\PointOfSaleMicroservices\Shared\PointOfSaleMicroservices.Shared.Abstractions\obj\Debug\net6.0\ref\PointOfSaleMicroservices.Shared.Abstractions.dll

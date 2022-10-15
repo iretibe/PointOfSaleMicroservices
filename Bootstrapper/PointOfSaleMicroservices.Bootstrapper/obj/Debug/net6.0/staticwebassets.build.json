@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "WyzTsHvI7qYRhNzETy86CZca6XexZlQv1+uvgmr8+bI=",
+  "Source": "PointOfSaleMicroservices.Bootstrapper",
+  "BasePath": "_content/PointOfSaleMicroservices.Bootstrapper",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

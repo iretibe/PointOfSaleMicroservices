@@ -1,0 +1,15 @@
+C:\PROJECT\PointOfSaleMicroservices\Modules\Customers\PointOfSaleMicroservices.Modules.Customers.Core\bin\Debug\net6.0\PointOfSaleMicroservices.Modules.Customers.Core.deps.json
+C:\PROJECT\PointOfSaleMicroservices\Modules\Customers\PointOfSaleMicroservices.Modules.Customers.Core\bin\Debug\net6.0\PointOfSaleMicroservices.Modules.Customers.Core.dll
+C:\PROJECT\PointOfSaleMicroservices\Modules\Customers\PointOfSaleMicroservices.Modules.Customers.Core\bin\Debug\net6.0\PointOfSaleMicroservices.Modules.Customers.Core.pdb
+C:\PROJECT\PointOfSaleMicroservices\Modules\Customers\PointOfSaleMicroservices.Modules.Customers.Core\bin\Debug\net6.0\PointOfSaleMicroservices.Shared.Infrastructure.dll
+C:\PROJECT\PointOfSaleMicroservices\Modules\Customers\PointOfSaleMicroservices.Modules.Customers.Core\bin\Debug\net6.0\PointOfSaleMicroservices.Shared.Infrastructure.pdb
+C:\PROJECT\PointOfSaleMicroservices\Modules\Customers\PointOfSaleMicroservices.Modules.Customers.Core\obj\Debug\net6.0\PointOfSaleMicroservices.Modules.Customers.Core.csproj.AssemblyReference.cache
+C:\PROJECT\PointOfSaleMicroservices\Modules\Customers\PointOfSaleMicroservices.Modules.Customers.Core\obj\Debug\net6.0\PointOfSaleMicroservices.Modules.Customers.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROJECT\PointOfSaleMicroservices\Modules\Customers\PointOfSaleMicroservices.Modules.Customers.Core\obj\Debug\net6.0\PointOfSaleMicroservices.Modules.Customers.Core.AssemblyInfoInputs.cache
+C:\PROJECT\PointOfSaleMicroservices\Modules\Customers\PointOfSaleMicroservices.Modules.Customers.Core\obj\Debug\net6.0\PointOfSaleMicroservices.Modules.Customers.Core.AssemblyInfo.cs
+C:\PROJECT\PointOfSaleMicroservices\Modules\Customers\PointOfSaleMicroservices.Modules.Customers.Core\obj\Debug\net6.0\PointOfSaleMicroservices.Modules.Customers.Core.csproj.CoreCompileInputs.cache
+C:\PROJECT\PointOfSaleMicroservices\Modules\Customers\PointOfSaleMicroservices.Modules.Customers.Core\obj\Debug\net6.0\PointOfSaleMicroservices.Modules.Customers.Core.csproj.CopyComplete
+C:\PROJECT\PointOfSaleMicroservices\Modules\Customers\PointOfSaleMicroservices.Modules.Customers.Core\obj\Debug\net6.0\PointOfSaleMicroservices.Modules.Customers.Core.dll
+C:\PROJECT\PointOfSaleMicroservices\Modules\Customers\PointOfSaleMicroservices.Modules.Customers.Core\obj\Debug\net6.0\refint\PointOfSaleMicroservices.Modules.Customers.Core.dll
+C:\PROJECT\PointOfSaleMicroservices\Modules\Customers\PointOfSaleMicroservices.Modules.Customers.Core\obj\Debug\net6.0\PointOfSaleMicroservices.Modules.Customers.Core.pdb
+C:\PROJECT\PointOfSaleMicroservices\Modules\Customers\PointOfSaleMicroservices.Modules.Customers.Core\obj\Debug\net6.0\ref\PointOfSaleMicroservices.Modules.Customers.Core.dll
