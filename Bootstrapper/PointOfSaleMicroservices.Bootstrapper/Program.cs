@@ -1,10 +1,12 @@
 using PointOfSaleMicroservices.Modules.Customers.Api;
+using PointOfSaleMicroservices.Shared.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddCustomersModule();
+builder.Services.AddModularInfrastructure();
 
 
 var app = builder.Build();
@@ -20,7 +22,7 @@ app.UseHttpsRedirection();
 
 app.UseRouting();
 
-//app.UseCustomersModule();
+app.AddCustomersModule();
 
 app.UseAuthorization();
 

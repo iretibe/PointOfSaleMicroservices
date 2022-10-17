@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "91HbkLCNZA8XUf0gt/crvaW0YAAT2tmUvT9lRMlPnMNX3S4C4xw4fLZWS8jTC1hAkawZjZ0kEUKeNxgOvO9Wsw==",
+  "dgSpecHash": "lnnCsKPIEU/Ck/tSmz4NdRr4ljmCSrr0V9F6gt5ORRP4XvbFGY4VH/87Xcn84y/2oSmvk4CmwMnD9ZSedgY+MA==",
   "success": true,
   "projectFilePath": "C:\\PROJECT\\PointOfSaleMicroservices\\Shared\\PointOfSaleMicroservices.Shared.Abstractions\\PointOfSaleMicroservices.Shared.Abstractions.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

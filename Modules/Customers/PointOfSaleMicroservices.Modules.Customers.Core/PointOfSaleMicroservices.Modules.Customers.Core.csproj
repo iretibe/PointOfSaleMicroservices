@@ -9,9 +9,11 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.2" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\PointOfSaleMicroservices.Shared.Abstractions\PointOfSaleMicroservices.Shared.Abstractions.csproj" />
     <ProjectReference Include="..\..\..\Shared\PointOfSaleMicroservices.Shared.Infrastructure\PointOfSaleMicroservices.Shared.Infrastructure.csproj" />
   </ItemGroup>
 

@@ -1,17 +1,19 @@
-﻿namespace PointOfSaleMicroservices.Modules.Customers.Core.Domain.Entities
+﻿using PointOfSaleMicroservices.Modules.Customers.Core.Domain.ValueObjects;
+using PointOfSaleMicroservices.Modules.Customers.Core.Exceptions;
+using PointOfSaleMicroservices.Shared.Abstractions.Kernel.ValueObjects;
+
+namespace PointOfSaleMicroservices.Modules.Customers.Core.Domain.Entities
 {
     public class Customer
     {
         public Guid Id { get; private set; }
-        public string Email { get; private set; }
-        public string Name { get; private set; }
-        public string FullName { get; private set; }
-        public string Address { get; private set; }
-        public string Nationality { get; private set; }
-        public string Identity { get; private set; }
-        public decimal Debit { get; private set; }
-        public decimal Credit { get; private set; }
-        public decimal CreditLimit { get; private set; }
+        public Email Email { get; private set; }
+        public Name Name { get; private set; }
+        public FullName FullName { get; private set; }
+        public Address Address { get; private set; }
+        public Nationality Nationality { get; private set; }
+        public string Notes { get; private set; }
+        public Identity Identity { get; private set; }
         public bool IsActive { get; private set; }
         public string PhotoImage { get; private set; }
         public DateTime CreatedAt { get; private set; }
@@ -23,11 +25,59 @@
 
         }
 
-        public Customer(Guid id, string email, DateTime createdAt)
+        public Customer(Guid id, Email email, DateTime createdAt)
         {
             Id = id;
             Email = email;
             CreatedAt = createdAt;
+        }
+
+        public void Complete(Name name, FullName fullName, Address address, Nationality nationality, 
+            Identity identity, DateTime completedAt)
+        {
+            if (!IsActive)
+            {
+                throw new CustomerNotActiveException(Id);
+            }
+
+            if (CompletedAt.HasValue)
+            {
+                throw new CannotCompleteCustomerException(Id);
+            }
+
+            Name = name ?? throw new InvalidCustomerNameException(Id);
+            FullName = fullName;
+            Address = address;
+            Nationality = nationality;
+            Identity = identity;
+            CompletedAt = completedAt;
+        }
+
+        public void Verify(DateTime verifiedAt)
+        {
+            if (!IsActive)
+            {
+                throw new CustomerNotActiveException(Id);
+            }
+
+            if (!CompletedAt.HasValue || VerifiedAt.HasValue)
+            {
+                throw new CannotVerifyCustomerException(Id);
+            }
+
+            VerifiedAt = verifiedAt;
+        }
+
+        public void Lock(string notes = null)
+        {
+            IsActive = false;
+            Notes = notes?.Trim();
+        }
+
+        public void Unlock(string notes = null)
+        {
+            IsActive = true;
+            Notes = notes?.Trim();
         }
     }
 }
