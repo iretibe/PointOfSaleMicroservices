@@ -1,4 +1,4 @@
-﻿using PointOfSaleMicroservices.Shared.Abstractions.Exceptions
+﻿using PointOfSaleMicroservices.Shared.Abstractions.Exceptions;
 
 namespace PointOfSaleMicroservices.Shared.Abstractions.Kernel.Exceptions
 {

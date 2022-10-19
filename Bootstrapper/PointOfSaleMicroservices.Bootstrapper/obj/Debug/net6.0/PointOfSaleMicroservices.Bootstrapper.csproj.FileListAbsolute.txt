@@ -38,3 +38,12 @@ C:\PROJECT\PointOfSaleMicroservices\Bootstrapper\PointOfSaleMicroservices.Bootst
 C:\PROJECT\PointOfSaleMicroservices\Bootstrapper\PointOfSaleMicroservices.Bootstrapper\bin\Debug\net6.0\PointOfSaleMicroservices.Shared.Abstractions.pdb
 C:\PROJECT\PointOfSaleMicroservices\Bootstrapper\PointOfSaleMicroservices.Bootstrapper\bin\Debug\net6.0\PointOfSaleMicroservices.Shared.Infrastructure.pdb
 C:\PROJECT\PointOfSaleMicroservices\Bootstrapper\PointOfSaleMicroservices.Bootstrapper\bin\Debug\net6.0\PointOfSaleMicroservices.Modules.Customers.Core.pdb
+C:\PROJECT\PointOfSaleMicroservices\Bootstrapper\PointOfSaleMicroservices.Bootstrapper\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\PROJECT\PointOfSaleMicroservices\Bootstrapper\PointOfSaleMicroservices.Bootstrapper\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\PROJECT\PointOfSaleMicroservices\Bootstrapper\PointOfSaleMicroservices.Bootstrapper\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\PROJECT\PointOfSaleMicroservices\Bootstrapper\PointOfSaleMicroservices.Bootstrapper\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\PROJECT\PointOfSaleMicroservices\Bootstrapper\PointOfSaleMicroservices.Bootstrapper\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\PROJECT\PointOfSaleMicroservices\Bootstrapper\PointOfSaleMicroservices.Bootstrapper\bin\Debug\net6.0\RestClient.dll
+C:\PROJECT\PointOfSaleMicroservices\Bootstrapper\PointOfSaleMicroservices.Bootstrapper\bin\Debug\net6.0\Scrutor.dll
+C:\PROJECT\PointOfSaleMicroservices\Bootstrapper\PointOfSaleMicroservices.Bootstrapper\bin\Debug\net6.0\Scrutor.AspNetCore.dll
+C:\PROJECT\PointOfSaleMicroservices\Bootstrapper\PointOfSaleMicroservices.Bootstrapper\bin\Debug\net6.0\System.Security.Permissions.dll

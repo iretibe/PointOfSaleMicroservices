@@ -9,17 +9,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{846B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{0A12DB25-1ECB-4F94-9F38-11643E975C4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSaleMicroservices.Bootstrapper", "Bootstrapper\PointOfSaleMicroservices.Bootstrapper\PointOfSaleMicroservices.Bootstrapper.csproj", "{47212495-F0D0-4A76-8B4F-AA9C28173C92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointOfSaleMicroservices.Bootstrapper", "Bootstrapper\PointOfSaleMicroservices.Bootstrapper\PointOfSaleMicroservices.Bootstrapper.csproj", "{47212495-F0D0-4A76-8B4F-AA9C28173C92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSaleMicroservices.Shared.Abstractions", "Shared\PointOfSaleMicroservices.Shared.Abstractions\PointOfSaleMicroservices.Shared.Abstractions.csproj", "{8BC90D88-9FFA-4D6B-B554-5600B6A0857C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointOfSaleMicroservices.Shared.Abstractions", "Shared\PointOfSaleMicroservices.Shared.Abstractions\PointOfSaleMicroservices.Shared.Abstractions.csproj", "{8BC90D88-9FFA-4D6B-B554-5600B6A0857C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSaleMicroservices.Shared.Infrastructure", "Shared\PointOfSaleMicroservices.Shared.Infrastructure\PointOfSaleMicroservices.Shared.Infrastructure.csproj", "{9A189251-D5F1-453B-B089-DD41D520A8B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointOfSaleMicroservices.Shared.Infrastructure", "Shared\PointOfSaleMicroservices.Shared.Infrastructure\PointOfSaleMicroservices.Shared.Infrastructure.csproj", "{9A189251-D5F1-453B-B089-DD41D520A8B9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Customers", "Customers", "{693BB3D7-828A-48AF-8C54-14910D0C1D5B}"
+	ProjectSection(SolutionItems) = preProject
+		Customers.rest = Customers.rest
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSaleMicroservices.Modules.Customers.Api", "Modules\Customers\PointOfSaleMicroservices.Modules.Customers.Api\PointOfSaleMicroservices.Modules.Customers.Api.csproj", "{FC126D93-DA87-4A55-9E0A-D53A9B28B8AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointOfSaleMicroservices.Modules.Customers.Api", "Modules\Customers\PointOfSaleMicroservices.Modules.Customers.Api\PointOfSaleMicroservices.Modules.Customers.Api.csproj", "{FC126D93-DA87-4A55-9E0A-D53A9B28B8AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSaleMicroservices.Modules.Customers.Core", "Modules\Customers\PointOfSaleMicroservices.Modules.Customers.Core\PointOfSaleMicroservices.Modules.Customers.Core.csproj", "{AE652AD1-345E-4AF6-B802-C79DFF0A04AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointOfSaleMicroservices.Modules.Customers.Core", "Modules\Customers\PointOfSaleMicroservices.Modules.Customers.Core\PointOfSaleMicroservices.Modules.Customers.Core.csproj", "{AE652AD1-345E-4AF6-B802-C79DFF0A04AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

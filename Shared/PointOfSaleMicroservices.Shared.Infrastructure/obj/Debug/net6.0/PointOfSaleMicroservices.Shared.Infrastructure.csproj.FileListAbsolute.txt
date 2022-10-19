@@ -10,3 +10,6 @@ C:\PROJECT\PointOfSaleMicroservices\Shared\PointOfSaleMicroservices.Shared.Infra
 C:\PROJECT\PointOfSaleMicroservices\Shared\PointOfSaleMicroservices.Shared.Infrastructure\obj\Debug\net6.0\refint\PointOfSaleMicroservices.Shared.Infrastructure.dll
 C:\PROJECT\PointOfSaleMicroservices\Shared\PointOfSaleMicroservices.Shared.Infrastructure\obj\Debug\net6.0\PointOfSaleMicroservices.Shared.Infrastructure.pdb
 C:\PROJECT\PointOfSaleMicroservices\Shared\PointOfSaleMicroservices.Shared.Infrastructure\obj\Debug\net6.0\ref\PointOfSaleMicroservices.Shared.Infrastructure.dll
+C:\PROJECT\PointOfSaleMicroservices\Shared\PointOfSaleMicroservices.Shared.Infrastructure\bin\Debug\net6.0\PointOfSaleMicroservices.Shared.Abstractions.dll
+C:\PROJECT\PointOfSaleMicroservices\Shared\PointOfSaleMicroservices.Shared.Infrastructure\bin\Debug\net6.0\PointOfSaleMicroservices.Shared.Abstractions.pdb
+C:\PROJECT\PointOfSaleMicroservices\Shared\PointOfSaleMicroservices.Shared.Infrastructure\obj\Debug\net6.0\PointOfSaleMicroservices.Shared.Infrastructure.csproj.CopyComplete

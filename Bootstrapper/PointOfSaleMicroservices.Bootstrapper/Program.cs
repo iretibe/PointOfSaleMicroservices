@@ -4,7 +4,7 @@ using PointOfSaleMicroservices.Shared.Infrastructure;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();
+//builder.Services.AddControllers();
 builder.Services.AddCustomersModule();
 builder.Services.AddModularInfrastructure();
 

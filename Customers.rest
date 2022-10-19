@@ -1,0 +1,10 @@
+@url = localhost:5000/customers
+
+###
+POST {{url}}
+content-type: application/json  
+
+
+{
+	"email": "yessouf2009@yahoo.fr"
+}
