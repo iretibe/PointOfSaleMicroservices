@@ -1,11 +1,14 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc.ApplicationParts;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PointOfSaleMicroservices.Shared.Abstractions.Commands;
+using PointOfSaleMicroservices.Shared.Abstractions.Dispatchers;
 using PointOfSaleMicroservices.Shared.Abstractions.Time;
+using PointOfSaleMicroservices.Shared.Infrastructure.Api;
 using PointOfSaleMicroservices.Shared.Infrastructure.Commands;
+using PointOfSaleMicroservices.Shared.Infrastructure.Dispatchers;
+using PointOfSaleMicroservices.Shared.Infrastructure.Postgres;
+using PointOfSaleMicroservices.Shared.Infrastructure.Queries;
+using PointOfSaleMicroservices.Shared.Infrastructure.SqlServer;
 using PointOfSaleMicroservices.Shared.Infrastructure.Time;
 using System.Runtime.CompilerServices;
 
@@ -17,26 +20,18 @@ namespace PointOfSaleMicroservices.Shared.Infrastructure
         public static IServiceCollection AddModularInfrastructure(this IServiceCollection services)
         {
             services
+                .AddCommands()
+                .AddQueries()
+                .AddSingleton<IDispatcher, InMemoryDispatcher>()
+                //.AddPostgres()
+                .AddSqlServers()
                 .AddSingleton<ICommandDispatcher, CommandDispatcher>()
                 .AddSingleton<IClock, UtcClock>()
-                //.AddControllers()
-                //.ConfigureApplicationPartManager(manager =>
-                //{
-                //    var removedParts = new List<ApplicationPart>();
-                //    foreach (var disabledModule in disabledModules)
-                //    {
-                //        var parts = manager.ApplicationParts.Where(x => x.Name.Contains(disabledModule,
-                //            StringComparison.InvariantCultureIgnoreCase));
-                //        removedParts.AddRange(parts);
-                //    }
-
-                //    foreach (var part in removedParts)
-                //    {
-                //        manager.ApplicationParts.Remove(part);
-                //    }
-
-                //    manager.FeatureProviders.Add(new InternalControllerFeatureProvider());
-                //});
+                .AddControllers()
+                .ConfigureApplicationPartManager(manager =>
+                {
+                    manager.FeatureProviders.Add(new InternalControllerFeatureProvider());
+                })
             ;
 
             return services;

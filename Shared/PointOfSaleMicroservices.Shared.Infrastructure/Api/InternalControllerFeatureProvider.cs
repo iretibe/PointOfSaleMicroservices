@@ -6,6 +6,8 @@ namespace PointOfSaleMicroservices.Shared.Infrastructure.Api
 {
     internal class InternalControllerFeatureProvider : ControllerFeatureProvider
     {
+        private const string ControllerTypeNameSuffix = "Controllers";
+
         protected override bool IsController(TypeInfo typeInfo)
         {
             if (!typeInfo.IsClass)
@@ -28,7 +30,13 @@ namespace PointOfSaleMicroservices.Shared.Infrastructure.Api
                 return false;
             }
 
-            if (!typeInfo.Name.EndsWith("Controller", StringComparison.OrdinalIgnoreCase) &&
+            //if (!typeInfo.Name.EndsWith("Controller", StringComparison.OrdinalIgnoreCase) &&
+            //    !typeInfo.IsDefined(typeof(ControllerAttribute)))
+            //{
+            //    return false;
+            //}
+
+            if (!typeInfo.Name.EndsWith(ControllerTypeNameSuffix, StringComparison.OrdinalIgnoreCase) &&
                 !typeInfo.IsDefined(typeof(ControllerAttribute)))
             {
                 return false;

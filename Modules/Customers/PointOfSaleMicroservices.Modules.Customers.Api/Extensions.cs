@@ -15,10 +15,8 @@ namespace PointOfSaleMicroservices.Modules.Customers.Api
             return services;
         }
 
-        public static IApplicationBuilder AddCustomersModule(this IApplicationBuilder app)
+        public static IApplicationBuilder UseCustomersModule(this IApplicationBuilder app)
         {
-
-
             return app;
         }
     }
