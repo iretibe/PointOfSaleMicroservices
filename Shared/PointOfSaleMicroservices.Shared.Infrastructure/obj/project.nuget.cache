@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5gd4FrI7oLW9aEFvHRXvvr7H00h2joDK7uXRXfXjLayc7ZFhaW6DtpsTjD/5jrOVnXqs4G5c3MK8ORFh5vZ5Bg==",
+  "dgSpecHash": "RXfVTTGhbAEGulooIK5bAONjy7lp7RAvvwZvzRju5lhR2IewwkXJe6Fituk+BQSjezBsmgtNPS5a0RtdsSrXGQ==",
   "success": true,
   "projectFilePath": "C:\\PROJECT\\PointOfSaleMicroservices\\Shared\\PointOfSaleMicroservices.Shared.Infrastructure\\PointOfSaleMicroservices.Shared.Infrastructure.csproj",
   "expectedPackageFiles": [

@@ -5,10 +5,8 @@ namespace PointOfSaleMicroservices.Shared.Infrastructure.Queries
 {
     internal static class Extensions
     {
-        public static IServiceCollection AddQueries(this IServiceCollection services)
+        public static IServiceCollection AddQueries(this IServiceCollection services, IList<System.Reflection.Assembly> assemblies)
         {
-            var assemblies = AppDomain.CurrentDomain.GetAssemblies();
-
             services.AddSingleton<IQueryDispatcher, QueryDispatcher>();
 
             services.Scan(s => s.FromAssemblies(assemblies)

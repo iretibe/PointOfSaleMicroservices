@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PointOfSaleMicroservices.Shared.Abstractions.Commands;
 using PointOfSaleMicroservices.Shared.Abstractions.Dispatchers;
@@ -10,6 +12,7 @@ using PointOfSaleMicroservices.Shared.Infrastructure.Postgres;
 using PointOfSaleMicroservices.Shared.Infrastructure.Queries;
 using PointOfSaleMicroservices.Shared.Infrastructure.SqlServer;
 using PointOfSaleMicroservices.Shared.Infrastructure.Time;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("PointOfSaleMicroservices.Bootstrapper")]
@@ -17,11 +20,11 @@ namespace PointOfSaleMicroservices.Shared.Infrastructure
 {
     internal static class Extensions
     {
-        public static IServiceCollection AddModularInfrastructure(this IServiceCollection services)
+        public static IServiceCollection AddModularInfrastructure(this IServiceCollection services, IList<Assembly> assemblies)
         {
             services
-                .AddCommands()
-                .AddQueries()
+                .AddCommands(assemblies)
+                .AddQueries(assemblies)
                 .AddSingleton<IDispatcher, InMemoryDispatcher>()
                 //.AddPostgres()
                 .AddSqlServers()
@@ -50,5 +53,30 @@ namespace PointOfSaleMicroservices.Shared.Infrastructure
             configuration.GetSection(sectionName).Bind(options);
             return options;
         }
+
+        public static string GetModuleName(this object value)
+            => value?.GetType().GetModuleName() ?? string.Empty;
+
+        public static string GetModuleName(this Type type, string namespacePart = "Modules", int splitIndex = 2)
+        {
+            if (type?.Namespace is null)
+            {
+                return string.Empty;
+            }
+
+            return type.Namespace.Contains(namespacePart)
+                ? type.Namespace.Split(".")[splitIndex].ToLowerInvariant()
+                : string.Empty;
+        }
+
+        //public static IApplicationBuilder UseCorrelationId(this IApplicationBuilder app)
+        //    => app.Use((ctx, next) =>
+        //    {
+        //        ctx.Items.Add(CorrelationIdKey, Guid.NewGuid());
+        //        return next();
+        //    });
+
+        //public static Guid? TryGetCorrelationId(this HttpContext context)
+        //    => context.Items.TryGetValue(CorrelationIdKey, out var id) ? (Guid)id : null;
     }
 }

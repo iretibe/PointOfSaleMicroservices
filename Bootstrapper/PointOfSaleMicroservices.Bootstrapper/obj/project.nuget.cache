@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pLRnF7Oe9qP7hF9VEyI0+0PPy0t6+hz87ZpvBRWqxYkNs4OL8dYHhoYMn7oI6eCkklVFFMqsAWfirJZ8k62ljA==",
+  "dgSpecHash": "LmKjPL0bemkni3bHyMgq9PHCdRVSEAzbr8w1zfw/XY0O9gxDLrk/F93uNH5Azqj2hAFgMD4l9wRlRQ6uyjoIjA==",
   "success": true,
   "projectFilePath": "C:\\PROJECT\\PointOfSaleMicroservices\\Bootstrapper\\PointOfSaleMicroservices.Bootstrapper\\PointOfSaleMicroservices.Bootstrapper.csproj",
   "expectedPackageFiles": [

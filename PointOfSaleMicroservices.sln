@@ -24,6 +24,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointOfSaleMicroservices.Mo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointOfSaleMicroservices.Modules.Customers.Core", "Modules\Customers\PointOfSaleMicroservices.Modules.Customers.Core\PointOfSaleMicroservices.Modules.Customers.Core.csproj", "{AE652AD1-345E-4AF6-B802-C79DFF0A04AE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BB519FEE-DAF3-49E0-9C1D-9BB9F599AC6D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

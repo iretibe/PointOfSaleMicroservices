@@ -1236,6 +1236,7 @@
       },
       "PointOfSaleMicroservices.Shared.Abstractions/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
         },
         "runtime": {

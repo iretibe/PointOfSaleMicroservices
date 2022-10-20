@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oG8iL4v2liPj++vNtIoa1xRw00ygImRnNwvECPgsxJnKf/nuEdjCu8078BTgVDOzPHInLA6jhpQmf1B3fMdSxA==",
+  "dgSpecHash": "sj6UKq/m2aYu6LFo0nTsNSd9W4HwvJ94K7okXeAgdhs/BonuhjB7FJFPl7+z93tWpvDDXz4utXxK4z9QqgLN9Q==",
   "success": true,
   "projectFilePath": "C:\\PROJECT\\PointOfSaleMicroservices\\Modules\\Customers\\PointOfSaleMicroservices.Modules.Customers.Core\\PointOfSaleMicroservices.Modules.Customers.Core.csproj",
   "expectedPackageFiles": [
