@@ -1,59 +1,81 @@
-using PointOfSaleMicroservices.Shared.Abstractions.Modules;
-using PointOfSaleMicroservices.Shared.Infrastructure;
 using PointOfSaleMicroservices.Shared.Infrastructure.Modules;
-using System.Reflection;
 
-var builder = WebApplication.CreateBuilder(args);
-
-//IList<Assembly> _assemblies = ;
-var _assemblies = new List<Assembly>();
-var _modules = new List<IModule>();
-
-_assemblies = (List<Assembly>)ModuleLoader.LoadAssemblies(builder.Configuration);
-_modules = (List<IModule>)ModuleLoader.LoadModule(_assemblies);
-
-// Add services to the container.
-builder.Services.AddModularInfrastructure(_assemblies);
-
-foreach (var module in _modules)
+namespace PointOfSaleMicroservices.Bootstrapper
 {
-    var services = new ServiceCollection();   
-    //IServiceCollection services = null;
-    module.Register(services);
+    public class Program
+    {
+        public static Task Main(string[] args)
+            => CreateHostBuilder(args).Build().RunAsync();
+
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+             Host.CreateDefaultBuilder(args)
+                 .ConfigureWebHostDefaults(webBuilder => webBuilder.UseStartup<Startup>())
+                 .ConfigureModules();
+                 //.UseLogging();
+    }
 }
 
-var app = builder.Build();
 
-//// Configure the HTTP request pipeline.
-//if (app.Environment.IsDevelopment())
+
+
+
+
+
+//using PointOfSaleMicroservices.Shared.Abstractions.Modules;
+//using PointOfSaleMicroservices.Shared.Infrastructure;
+//using PointOfSaleMicroservices.Shared.Infrastructure.Modules;
+//using System.Reflection;
+
+//var builder = WebApplication.CreateBuilder(args);
+
+////IList<Assembly> _assemblies = ;
+//var _assemblies = new List<Assembly>();
+//var _modules = new List<IModule>();
+
+//_assemblies = (List<Assembly>)ModuleLoader.LoadAssemblies(builder.Configuration);
+//_modules = (List<IModule>)ModuleLoader.LoadModule(_assemblies);
+
+//// Add services to the container.
+//builder.Services.AddModularInfrastructure(_assemblies);
+
+//foreach (var module in _modules)
 //{
-//    app.UseSwagger();
-//    app.UseSwaggerUI();
+//    var services = new ServiceCollection();   
+//    //IServiceCollection services = null;
+//    module.Register(services);
 //}
 
-app.UseHttpsRedirection();
+//var app = builder.Build();
 
-app.UseRouting();
+////// Configure the HTTP request pipeline.
+////if (app.Environment.IsDevelopment())
+////{
+////    app.UseSwagger();
+////    app.UseSwaggerUI();
+////}
 
-//app.UseCustomersModule();
+//app.UseHttpsRedirection();
 
-foreach (var module in _modules)
-{
-    module.Use(app);
-}
+//app.UseRouting();
 
-//app.UseAuthorization();
+////app.UseCustomersModule();
 
-//app.MapControllers();
+//foreach (var module in _modules)
+//{
+//    module.Use(app);
+//}
 
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllers();
-    endpoints.MapGet("/", context => context.Response.WriteAsync("Point Of Sale Microservices Bootstrapper"));
-});
+////app.UseAuthorization();
 
-_assemblies.Clear();
-_modules.Clear();
+////app.MapControllers();
 
-app.Run();
-    
+//app.UseEndpoints(endpoints =>
+//{
+//    endpoints.MapControllers();
+//    endpoints.MapGet("/", context => context.Response.WriteAsync("Point Of Sale Microservices Bootstrapper"));
+//});
+
+//_assemblies.Clear();
+//_modules.Clear();
+
+//app.Run();

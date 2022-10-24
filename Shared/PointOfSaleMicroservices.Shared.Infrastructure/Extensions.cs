@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.ApplicationParts;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PointOfSaleMicroservices.Shared.Abstractions.Commands;
@@ -12,6 +13,7 @@ using PointOfSaleMicroservices.Shared.Infrastructure.Postgres;
 using PointOfSaleMicroservices.Shared.Infrastructure.Queries;
 using PointOfSaleMicroservices.Shared.Infrastructure.SqlServer;
 using PointOfSaleMicroservices.Shared.Infrastructure.Time;
+using System;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 
@@ -22,6 +24,25 @@ namespace PointOfSaleMicroservices.Shared.Infrastructure
     {
         public static IServiceCollection AddModularInfrastructure(this IServiceCollection services, IList<Assembly> assemblies)
         {
+            var disabledModules = new List<string>();
+            using (var scope = services.BuildServiceProvider().CreateScope())
+            {
+                var configuration = scope.ServiceProvider.GetRequiredService<IConfiguration>();
+
+                foreach (var (key, value) in configuration.AsEnumerable())
+                {
+                    if (!key.Contains(":module:enabled"))
+                    {
+                        continue;
+                    }
+
+                    if (!bool.Parse(value))
+                    {
+                        disabledModules.Add(key.Split(":")[0]);
+                    }
+                }
+            }
+
             services
                 .AddCommands(assemblies)
                 .AddQueries(assemblies)
@@ -33,6 +54,21 @@ namespace PointOfSaleMicroservices.Shared.Infrastructure
                 .AddControllers()
                 .ConfigureApplicationPartManager(manager =>
                 {
+                    var removedParts = new List<ApplicationPart>();
+
+                    foreach (var disabledModule in disabledModules)
+                    {
+                        var parts = manager.ApplicationParts.Where(x => x.Name.Contains(disabledModule,
+                            StringComparison.InvariantCultureIgnoreCase));
+
+                        removedParts.AddRange(parts);
+                    }
+
+                    foreach (var part in removedParts)
+                    {
+                        manager.ApplicationParts.Remove(part);
+                    }
+
                     manager.FeatureProviders.Add(new InternalControllerFeatureProvider());
                 })
             ;
