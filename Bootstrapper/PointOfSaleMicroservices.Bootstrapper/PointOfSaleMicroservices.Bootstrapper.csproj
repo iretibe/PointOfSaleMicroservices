@@ -28,6 +28,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Modules\Customers\PointOfSaleMicroservices.Modules.Customers.Api\PointOfSaleMicroservices.Modules.Customers.Api.csproj" />
+    <ProjectReference Include="..\..\Modules\Users\PointOfSaleMicroservices.Modules.Users.Api\PointOfSaleMicroservices.Modules.Users.Api.csproj" />
     <ProjectReference Include="..\..\Shared\PointOfSaleMicroservices.Shared.Abstractions\PointOfSaleMicroservices.Shared.Abstractions.csproj" />
     <ProjectReference Include="..\..\Shared\PointOfSaleMicroservices.Shared.Infrastructure\PointOfSaleMicroservices.Shared.Infrastructure.csproj" />
   </ItemGroup>

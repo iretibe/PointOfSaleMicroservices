@@ -596,6 +596,36 @@
           }
         }
       },
+      "MessagePack/2.4.59": {
+        "type": "package",
+        "dependencies": {
+          "MessagePack.Annotations": "2.4.59",
+          "Microsoft.NET.StringTools": "17.4.0"
+        },
+        "compile": {
+          "lib/net6.0/MessagePack.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MessagePack.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MessagePack.Annotations/2.4.59": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MessagePack.Annotations.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MessagePack.Annotations.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -1779,6 +1809,23 @@
           }
         }
       },
+      "Microsoft.NET.StringTools/17.4.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/Microsoft.NET.StringTools.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.NET.StringTools.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.NETCore.Platforms/3.1.0": {
         "type": "package",
         "compile": {
@@ -2207,7 +2254,23 @@
           "build/Swashbuckle.AspNetCore.props": {}
         }
       },
-      "Swashbuckle.AspNetCore.Swagger/6.2.3": {
+      "Swashbuckle.AspNetCore.Annotations/6.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.4.0"
+        },
+        "compile": {
+          "lib/net6.0/Swashbuckle.AspNetCore.Annotations.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Swashbuckle.AspNetCore.Annotations.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.Swagger/6.4.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.OpenApi": "1.2.3"
@@ -2226,10 +2289,10 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Swashbuckle.AspNetCore.SwaggerGen/6.2.3": {
+      "Swashbuckle.AspNetCore.SwaggerGen/6.4.0": {
         "type": "package",
         "dependencies": {
-          "Swashbuckle.AspNetCore.Swagger": "6.2.3"
+          "Swashbuckle.AspNetCore.Swagger": "6.4.0"
         },
         "compile": {
           "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
@@ -2682,7 +2745,7 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.5.5": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.1/_._": {}
@@ -3635,6 +3698,34 @@
           "bin/placeholder/PointOfSaleMicroservices.Modules.Customers.Core.dll": {}
         }
       },
+      "PointOfSaleMicroservices.Modules.Users.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "PointOfSaleMicroservices.Modules.Users.Core": "1.0.0",
+          "Swashbuckle.AspNetCore.Annotations": "6.4.0"
+        },
+        "compile": {
+          "bin/placeholder/PointOfSaleMicroservices.Modules.Users.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PointOfSaleMicroservices.Modules.Users.Api.dll": {}
+        }
+      },
+      "PointOfSaleMicroservices.Modules.Users.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "PointOfSaleMicroservices.Shared.Abstractions": "1.0.0",
+          "PointOfSaleMicroservices.Shared.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PointOfSaleMicroservices.Modules.Users.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PointOfSaleMicroservices.Modules.Users.Core.dll": {}
+        }
+      },
       "PointOfSaleMicroservices.Shared.Abstractions/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3654,6 +3745,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Humanizer": "2.14.1",
+          "MessagePack": "2.4.59",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.10",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
@@ -4422,6 +4514,38 @@
         "lib/netstandard1.0/zh-Hant/Humanizer.resources.dll",
         "lib/netstandard2.0/zh-Hant/Humanizer.resources.dll",
         "logo.png"
+      ]
+    },
+    "MessagePack/2.4.59": {
+      "sha512": "bj1NsZu4SckIIHxZcLc3+S64MiDRm+YlQi9MDsA+dt6x/QNiELftDQ9VQ88n3sgRzaniMqgfzO9pHXGoxcsKCQ==",
+      "type": "package",
+      "path": "messagepack/2.4.59",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/MessagePack.dll",
+        "lib/net6.0/MessagePack.xml",
+        "lib/netcoreapp3.1/MessagePack.dll",
+        "lib/netcoreapp3.1/MessagePack.xml",
+        "lib/netstandard2.0/MessagePack.dll",
+        "lib/netstandard2.0/MessagePack.xml",
+        "messagepack.2.4.59.nupkg.sha512",
+        "messagepack.nuspec"
+      ]
+    },
+    "MessagePack.Annotations/2.4.59": {
+      "sha512": "3I1OxkqjiL0QEHnEJCia5TOeQuqVpYmNbprdw9uyIRXniei01ElWTS7Qcte+ionHM0KYiPWYhXQFJIeYb5Hbrg==",
+      "type": "package",
+      "path": "messagepack.annotations/2.4.59",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/netstandard2.0/MessagePack.Annotations.dll",
+        "lib/netstandard2.0/MessagePack.Annotations.xml",
+        "messagepack.annotations.2.4.59.nupkg.sha512",
+        "messagepack.annotations.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Antiforgery/2.2.0": {
@@ -5687,6 +5811,40 @@
         "microsoft.net.http.headers.nuspec"
       ]
     },
+    "Microsoft.NET.StringTools/17.4.0": {
+      "sha512": "06T6Hqfs3JDIaBvJaBRFFMIdU7oE0OMab5Xl8LKQjWPxBQr3BgVFKMQPTC+GsSEuYREWmK6g5eOd7Xqd9p1YCA==",
+      "type": "package",
+      "path": "microsoft.net.stringtools/17.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "MSBuild-NuGet-Icon.png",
+        "README.md",
+        "lib/net35/Microsoft.NET.StringTools.net35.dll",
+        "lib/net35/Microsoft.NET.StringTools.net35.pdb",
+        "lib/net35/Microsoft.NET.StringTools.net35.xml",
+        "lib/net472/Microsoft.NET.StringTools.dll",
+        "lib/net472/Microsoft.NET.StringTools.pdb",
+        "lib/net472/Microsoft.NET.StringTools.xml",
+        "lib/net7.0/Microsoft.NET.StringTools.dll",
+        "lib/net7.0/Microsoft.NET.StringTools.pdb",
+        "lib/net7.0/Microsoft.NET.StringTools.xml",
+        "lib/netstandard2.0/Microsoft.NET.StringTools.dll",
+        "lib/netstandard2.0/Microsoft.NET.StringTools.pdb",
+        "lib/netstandard2.0/Microsoft.NET.StringTools.xml",
+        "microsoft.net.stringtools.17.4.0.nupkg.sha512",
+        "microsoft.net.stringtools.nuspec",
+        "notices/THIRDPARTYNOTICES.txt",
+        "ref/net35/Microsoft.NET.StringTools.net35.dll",
+        "ref/net35/Microsoft.NET.StringTools.net35.xml",
+        "ref/net472/Microsoft.NET.StringTools.dll",
+        "ref/net472/Microsoft.NET.StringTools.xml",
+        "ref/net7.0/Microsoft.NET.StringTools.dll",
+        "ref/net7.0/Microsoft.NET.StringTools.xml",
+        "ref/netstandard2.0/Microsoft.NET.StringTools.dll",
+        "ref/netstandard2.0/Microsoft.NET.StringTools.xml"
+      ]
+    },
     "Microsoft.NETCore.Platforms/3.1.0": {
       "sha512": "z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
       "type": "package",
@@ -6299,10 +6457,33 @@
         "swashbuckle.aspnetcore.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.Swagger/6.2.3": {
-      "sha512": "qOF7j1sL0bWm8g/qqHVPCvkO3JlVvUIB8WfC98kSh6BT5y5DAnBNctfac7XR5EZf+eD7/WasvANncTqwZYfmWQ==",
+    "Swashbuckle.AspNetCore.Annotations/6.4.0": {
+      "sha512": "frMa+jf9YVpCiMN+mFehfEdgQ7QEqLrhNssNmPwAgfXbdLwedQiVpBpoq+20dImdeNbN7RgY12soH2DvEzSaqw==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swagger/6.2.3",
+      "path": "swashbuckle.aspnetcore.annotations/6.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Swashbuckle.AspNetCore.Annotations.dll",
+        "lib/net5.0/Swashbuckle.AspNetCore.Annotations.pdb",
+        "lib/net5.0/Swashbuckle.AspNetCore.Annotations.xml",
+        "lib/net6.0/Swashbuckle.AspNetCore.Annotations.dll",
+        "lib/net6.0/Swashbuckle.AspNetCore.Annotations.pdb",
+        "lib/net6.0/Swashbuckle.AspNetCore.Annotations.xml",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Annotations.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Annotations.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Annotations.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Annotations.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Annotations.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Annotations.xml",
+        "swashbuckle.aspnetcore.annotations.6.4.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.annotations.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.Swagger/6.4.0": {
+      "sha512": "nl4SBgGM+cmthUcpwO/w1lUjevdDHAqRvfUoe4Xp/Uvuzt9mzGUwyFCqa3ODBAcZYBiFoKvrYwz0rabslJvSmQ==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swagger/6.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6318,14 +6499,14 @@
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.dll",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.pdb",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.xml",
-        "swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+        "swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swagger.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.SwaggerGen/6.2.3": {
-      "sha512": "+Xq7WdMCCfcXlnbLJVFNgY8ITdP2TRYIlpbt6IKzDw5FwFxdi9lBfNDtcT+/wkKwX70iBBFmXldnnd02/VO72A==",
+    "Swashbuckle.AspNetCore.SwaggerGen/6.4.0": {
+      "sha512": "lXhcUBVqKrPFAQF7e/ZeDfb5PMgE8n5t6L5B6/BQSpiwxgHzmBcx8Msu42zLYFTvR5PIqE9Q9lZvSQAcwCxJjw==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swaggergen/6.2.3",
+      "path": "swashbuckle.aspnetcore.swaggergen/6.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6341,7 +6522,7 @@
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
-        "swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggergen.nuspec"
       ]
     },
@@ -7632,10 +7813,10 @@
         "system.linq.expressions.nuspec"
       ]
     },
-    "System.Memory/4.5.4": {
-      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+    "System.Memory/4.5.5": {
+      "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
       "type": "package",
-      "path": "system.memory/4.5.4",
+      "path": "system.memory/4.5.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7649,7 +7830,7 @@
         "lib/netstandard2.0/System.Memory.dll",
         "lib/netstandard2.0/System.Memory.xml",
         "ref/netcoreapp2.1/_._",
-        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.4.5.5.nupkg.sha512",
         "system.memory.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -10064,6 +10245,16 @@
       "path": "../../Modules/Customers/PointOfSaleMicroservices.Modules.Customers.Core/PointOfSaleMicroservices.Modules.Customers.Core.csproj",
       "msbuildProject": "../../Modules/Customers/PointOfSaleMicroservices.Modules.Customers.Core/PointOfSaleMicroservices.Modules.Customers.Core.csproj"
     },
+    "PointOfSaleMicroservices.Modules.Users.Api/1.0.0": {
+      "type": "project",
+      "path": "../../Modules/Users/PointOfSaleMicroservices.Modules.Users.Api/PointOfSaleMicroservices.Modules.Users.Api.csproj",
+      "msbuildProject": "../../Modules/Users/PointOfSaleMicroservices.Modules.Users.Api/PointOfSaleMicroservices.Modules.Users.Api.csproj"
+    },
+    "PointOfSaleMicroservices.Modules.Users.Core/1.0.0": {
+      "type": "project",
+      "path": "../../Modules/Users/PointOfSaleMicroservices.Modules.Users.Core/PointOfSaleMicroservices.Modules.Users.Core.csproj",
+      "msbuildProject": "../../Modules/Users/PointOfSaleMicroservices.Modules.Users.Core/PointOfSaleMicroservices.Modules.Users.Core.csproj"
+    },
     "PointOfSaleMicroservices.Shared.Abstractions/1.0.0": {
       "type": "project",
       "path": "../../Shared/PointOfSaleMicroservices.Shared.Abstractions/PointOfSaleMicroservices.Shared.Abstractions.csproj",
@@ -10082,6 +10273,7 @@
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 6.0.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.17.0",
       "PointOfSaleMicroservices.Modules.Customers.Api >= 1.0.0",
+      "PointOfSaleMicroservices.Modules.Users.Api >= 1.0.0",
       "PointOfSaleMicroservices.Shared.Abstractions >= 1.0.0",
       "PointOfSaleMicroservices.Shared.Infrastructure >= 1.0.0",
       "RestClient >= 3.968.19454",
@@ -10125,6 +10317,9 @@
           "projectReferences": {
             "C:\\PROJECT\\PointOfSaleMicroservices\\Modules\\Customers\\PointOfSaleMicroservices.Modules.Customers.Api\\PointOfSaleMicroservices.Modules.Customers.Api.csproj": {
               "projectPath": "C:\\PROJECT\\PointOfSaleMicroservices\\Modules\\Customers\\PointOfSaleMicroservices.Modules.Customers.Api\\PointOfSaleMicroservices.Modules.Customers.Api.csproj"
+            },
+            "C:\\PROJECT\\PointOfSaleMicroservices\\Modules\\Users\\PointOfSaleMicroservices.Modules.Users.Api\\PointOfSaleMicroservices.Modules.Users.Api.csproj": {
+              "projectPath": "C:\\PROJECT\\PointOfSaleMicroservices\\Modules\\Users\\PointOfSaleMicroservices.Modules.Users.Api\\PointOfSaleMicroservices.Modules.Users.Api.csproj"
             },
             "C:\\PROJECT\\PointOfSaleMicroservices\\Shared\\PointOfSaleMicroservices.Shared.Abstractions\\PointOfSaleMicroservices.Shared.Abstractions.csproj": {
               "projectPath": "C:\\PROJECT\\PointOfSaleMicroservices\\Shared\\PointOfSaleMicroservices.Shared.Abstractions\\PointOfSaleMicroservices.Shared.Abstractions.csproj"

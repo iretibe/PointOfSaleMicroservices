@@ -1,3 +1,9 @@
 ﻿C:\PROJECT\PointOfSaleMicroservices\Modules\Customers\PointOfSaleMicroservices.Modules.Customers.Core>
 dotnet ef migrations add CustomersInitial --startup-project ../../../Bootstrapper\PointOfSaleMicroservices.Bootstrapper/ --context CustomersDbContext -o ./DAL/Migrations
 dotnet ef database update --startup-project ../../../Bootstrapper\PointOfSaleMicroservices.Bootstrapper/
+
+C:\PROJECT\PointOfSaleMicroservices\Modules\Users\PointOfSaleMicroservices.Modules.Users.Core
+dotnet ef migrations add UsersInitial --startup-project ../../../Bootstrapper\PointOfSaleMicroservices.Bootstrapper/ --context UsersDbContext -o ./DAL/Migrations
+dotnet ef database update --startup-project ../../../Bootstrapper\PointOfSaleMicroservices.Bootstrapper/
+
+

@@ -12,7 +12,7 @@ namespace PointOfSaleMicroservices.Bootstrapper
 
         public Startup(IConfiguration configuration)
         {
-            _assemblies = ModuleLoader.LoadAssemblies(configuration); //, "PointOfSales.Modules.");
+            _assemblies = ModuleLoader.LoadAssemblies(configuration);//, "PointOfSaleMicroservices.Modules.");
             _modules = ModuleLoader.LoadModule(_assemblies);
         }
 
@@ -42,7 +42,7 @@ namespace PointOfSaleMicroservices.Bootstrapper
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapGet("/", context => context.Response.WriteAsync("LMS API"));
+                endpoints.MapGet("/", context => context.Response.WriteAsync("Point Of Sales Microservices API"));
                 //endpoints.MapModuleInfo();
             });
 

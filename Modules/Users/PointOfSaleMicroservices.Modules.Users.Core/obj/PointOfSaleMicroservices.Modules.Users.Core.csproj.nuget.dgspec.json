@@ -1,0 +1,278 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\PROJECT\\PointOfSaleMicroservices\\Modules\\Users\\PointOfSaleMicroservices.Modules.Users.Core\\PointOfSaleMicroservices.Modules.Users.Core.csproj": {}
+  },
+  "projects": {
+    "C:\\PROJECT\\PointOfSaleMicroservices\\Modules\\Users\\PointOfSaleMicroservices.Modules.Users.Core\\PointOfSaleMicroservices.Modules.Users.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\PROJECT\\PointOfSaleMicroservices\\Modules\\Users\\PointOfSaleMicroservices.Modules.Users.Core\\PointOfSaleMicroservices.Modules.Users.Core.csproj",
+        "projectName": "PointOfSaleMicroservices.Modules.Users.Core",
+        "projectPath": "C:\\PROJECT\\PointOfSaleMicroservices\\Modules\\Users\\PointOfSaleMicroservices.Modules.Users.Core\\PointOfSaleMicroservices.Modules.Users.Core.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\PROJECT\\PointOfSaleMicroservices\\Modules\\Users\\PointOfSaleMicroservices.Modules.Users.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\PROJECT\\PointOfSaleMicroservices\\Shared\\PointOfSaleMicroservices.Shared.Abstractions\\PointOfSaleMicroservices.Shared.Abstractions.csproj": {
+                "projectPath": "C:\\PROJECT\\PointOfSaleMicroservices\\Shared\\PointOfSaleMicroservices.Shared.Abstractions\\PointOfSaleMicroservices.Shared.Abstractions.csproj"
+              },
+              "C:\\PROJECT\\PointOfSaleMicroservices\\Shared\\PointOfSaleMicroservices.Shared.Infrastructure\\PointOfSaleMicroservices.Shared.Infrastructure.csproj": {
+                "projectPath": "C:\\PROJECT\\PointOfSaleMicroservices\\Shared\\PointOfSaleMicroservices.Shared.Infrastructure\\PointOfSaleMicroservices.Shared.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.1.22431.12\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\PROJECT\\PointOfSaleMicroservices\\Shared\\PointOfSaleMicroservices.Shared.Abstractions\\PointOfSaleMicroservices.Shared.Abstractions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\PROJECT\\PointOfSaleMicroservices\\Shared\\PointOfSaleMicroservices.Shared.Abstractions\\PointOfSaleMicroservices.Shared.Abstractions.csproj",
+        "projectName": "PointOfSaleMicroservices.Shared.Abstractions",
+        "projectPath": "C:\\PROJECT\\PointOfSaleMicroservices\\Shared\\PointOfSaleMicroservices.Shared.Abstractions\\PointOfSaleMicroservices.Shared.Abstractions.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\PROJECT\\PointOfSaleMicroservices\\Shared\\PointOfSaleMicroservices.Shared.Abstractions\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Extensions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.1.22431.12\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\PROJECT\\PointOfSaleMicroservices\\Shared\\PointOfSaleMicroservices.Shared.Infrastructure\\PointOfSaleMicroservices.Shared.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\PROJECT\\PointOfSaleMicroservices\\Shared\\PointOfSaleMicroservices.Shared.Infrastructure\\PointOfSaleMicroservices.Shared.Infrastructure.csproj",
+        "projectName": "PointOfSaleMicroservices.Shared.Infrastructure",
+        "projectPath": "C:\\PROJECT\\PointOfSaleMicroservices\\Shared\\PointOfSaleMicroservices.Shared.Infrastructure\\PointOfSaleMicroservices.Shared.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\PROJECT\\PointOfSaleMicroservices\\Shared\\PointOfSaleMicroservices.Shared.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\PROJECT\\PointOfSaleMicroservices\\Shared\\PointOfSaleMicroservices.Shared.Abstractions\\PointOfSaleMicroservices.Shared.Abstractions.csproj": {
+                "projectPath": "C:\\PROJECT\\PointOfSaleMicroservices\\Shared\\PointOfSaleMicroservices.Shared.Abstractions\\PointOfSaleMicroservices.Shared.Abstractions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Humanizer": {
+              "target": "Package",
+              "version": "[2.14.1, )"
+            },
+            "MessagePack": {
+              "target": "Package",
+              "version": "[2.4.59, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Scrutor": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.1.22431.12\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

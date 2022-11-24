@@ -10,7 +10,7 @@ namespace PointOfSaleMicroservices.Modules.Customers.Core
 {
     internal static class Extensions
     {
-        public static IServiceCollection AddCustomersCore(this IServiceCollection services)
+        public static IServiceCollection AddCore(this IServiceCollection services)
         {
             services
                 .AddScoped<ICustomerRepository, CustomersRepository>()
