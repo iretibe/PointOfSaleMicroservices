@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PointOfSaleMicroservices.Modules.Users.Core\PointOfSaleMicroservices.Modules.Users.Core.csproj" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\PointOfSaleMicroservices.Modules.Users.Core\PointOfSaleMicroservices.Modules.Users.Core.csproj" />
   </ItemGroup>
 
 </Project>
